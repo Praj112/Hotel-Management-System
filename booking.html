@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RADISSON BLU</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="caro" style="margin-top: 20px;">
+        <div class="container">
+            <a class="navbar-brand" href="#">RADISSON</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/rooms">Rooms</a>
+                    </li>  
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <img src="./images/trial3.jpg" class="image">
+    </div>
+    <div class="containerz">
+        <div class="container">
+            <div class="header" style="padding-top: 30px;">
+                <div class="text-center">
+                    <h3>Booking Information:</h3>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div>
+                <h5>Room Information:</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Room Type:</label>
+                            <select id="type" name="type" class="form-control" placeholder="Select-Room">
+                                <option>Suites</option>
+                                <option>Deluxe Rooms</option>
+                                <option>King Rooms</option>
+                                <option>Single</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>No of Rooms:</label>
+                            <select id="room" name="room" class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>From:</label>
+                            <input id="from" name="from" class="form-control" type="date">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>To:</label>
+                            <input id="to" name="to" class="form-control" type="date">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h5>Personal Information:</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>First Name:</label>
+                            <input id="fname" name="fname" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Last Name:</label>
+                            <input id="lname" name="lname" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Email-Id:</label>
+                            <input id="email" name="email" class="form-control" type="email">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Phone Number:</label>
+                            <input id="mobile" name="mobile" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="text-center" id="btn-submit">
+                    <button class="btn btn-success" onclick="newBooking()" style=" padding: 10px 20px; border: 3px white solid;">Confirm Booking</button>
+                </div>
+                <div class="text-center" id="continue">
+                    <a href="/services">
+                        <h4 class="congrats">CONGRATULATIONS! BOOKING SUCCESSFULL</h4>
+                        <div class="text-center btn btn-success" id="btn-submit" style="padding: 10px 20px; border: solid 3px white;">
+                            Click To Continue
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            <br>
+        </div>
+    </div>    
+    <footer id="footer" class="footx">
+        <div class="container">
+            <div class="row rowinfoot">
+                <div class="col-md-4">
+                    <h3 class="foo-head">Subscribe</h3>
+                    <p class="foo2-text">Register your Email ID to subscribe <br> to our Weekly NewsLetter.</p>
+                    <form id="form-subscribe">
+                    <div class="input-group">
+                        <input class="form-control" type="email" placeholder="Email Address" id="email" style="background-color: white !important">
+                        <div class="input-group-append">
+                                <button class="btn btn-default" type="submit" onclick="onSubscribe()">Subscribe</button>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="col-md-4" style="padding-left: 100px;">
+                    <h3 class="foo-head">Company</h3>
+                    <ul class="list-unstyled foo2-text">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Hotels</a></li>
+                        <li><a href="#">Customer Care</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="foo-head">Our Facilities</h3>
+                    <ul class="list-unstyled foo2-text">
+                        <li><a href="#">Resturant</a></li>
+                        <li><a href="#">Bars</a></li>
+                        <li><a href="#">Pick-up</a></li>
+                        <li><a href="#">Swimming Pool</a></li>
+                        <li><a href="#">Spa</a></li>
+                        <li><a href="#">Gym</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="copyright text-center">
+            <p>Made with Love By kapsky</p>
+            <p><small>© kapsky</small></p>
+        </div> -->
+    </footer>
+
+
+    <script>
+        var submis = document.getElementById('btn-submit');
+        var cont = document.getElementById('continue');
+        cont.style.display="none";
+        async function newBooking() {
+            let type = document.getElementById('type').value;
+            let room = document.getElementById('room').value;
+            let from = document.getElementById('from').value;
+            let to = document.getElementById('to').value;
+            let fname = document.getElementById('fname').value;
+            let lname = document.getElementById('lname').value;
+            let mobile = document.getElementById('mobile').value;
+            let email = document.getElementById('email').value;
+
+            let data = {"type": type, "room": room, "from": from, "to": to, "fname": fname, "lname": lname, "mobile": mobile, "email": email};
+            console.log("button clicked");
+            const res = await fetch('http://localhost:3000/booking/new', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data) 
+            });
+              const response = await res.json();
+            if(response.message == "Booking Successfull"){
+                    submis.style.display ="none";
+                cont.style.display = "block";
+            }
+            else{
+                alert(response.message);
+            }
+        }
+
+        async function onSubscribe(){
+            let email = document.getElementById('email').value;
+            let data = {"email": email};
+            console.log(data);
+            const res = await fetch('http://localhost:3000/services/news', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data) 
+            });
+            const response = await res.json();
+            alert(response.message);
+        }
+
+
+    </script>
+     
+</body>
+</html>

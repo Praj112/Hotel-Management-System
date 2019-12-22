@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RADISSON BLU</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/82e6195eae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="caro" style="margin-top: 20px;">
+        <div class="container">
+            <a class="navbar-brand" href="#">RADISSON</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/rooms">Rooms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="homeScreenCaro" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#homeScreenCaro" data-slide-to="0" class="active"></li>
+            <li data-target="#homeScreenCaro" data-slide-to="1"></li>
+            <li data-target="#homeScreenCaro" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/4.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h5>Reserve Room For Family Vacation</h5>
+                    <a href="/rooms"><div class="btn btn-primary">
+                        Book Now
+                    </div></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/6.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h5>Make Your Vacation ComFortable.</h5>
+                    <a href="/rooms"><div class="btn btn-primary">
+                        Book Now
+                    </div></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/5.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h5>A Best Place To Enjoy Your Life</h5>
+                    <a href="/rooms"><div class="btn btn-primary">
+                        Book Now
+                    </div></a>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#homeScreenCaro" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#homeScreenCaro" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="container" id="tabs">
+        <div class="row" style="margin: 60px auto 40px auto  !important;">
+            <div class="fac">HOTEL FACILITIES</div>
+        </div>
+        <nav>
+            <div class="nav nav-pills nav-fill" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="restaurant-tab" data-toggle="tab" href="#restaurant" role="tab">
+                    <div class="tabx" style="font-weight:600;">
+                        <i class="fas fa-2x fa-utensils" style="margin: 20px auto;"></i>
+                        <h6 style="margin: 10px; letter-spacing: 1px;">RESTAURANT</h6>
+                    </div>
+                </a>
+                <a class="nav-item nav-link" id="bar-tab" data-toggle="tab" href="#bar" role="tab">
+                    <div class="tabx" style="font-weight:600;">
+                        <i class="fas fa-2x fa-glass-cheers" style="margin: 20px auto;"></i> 
+                        <h6 style="margin: 10px; letter-spacing: 1px;">BAR</h6>
+                    </div>
+                </a>
+                <a class="nav-item nav-link" id="pickup-tab" data-toggle="tab" href="#pickup" role="tab">
+                    <div class="tabx" style="font-weight:600;">
+                        <i class="fas fa-2x fa-car" style="margin: 20px auto;"></i>
+                        <h6 style="margin: 10px; letter-spacing: 1px;">PICK-UP</h6>
+                    </div>
+                </a>
+                <a class="nav-item nav-link" id="pool-tab" data-toggle="tab" href="#pool" role="tab">
+                    <div class="tabx" style="font-weight:600;">
+                        <i class="fas fa-2x fa-swimmer" style="margin: 20px auto;"></i>                        
+                        <h6 style="margin: 10px; letter-spacing: 1px;">SWIMMING POOL</h6>
+                    </div>
+                </a>
+                <a class="nav-item nav-link" id="gym-tab" data-toggle="tab" href="#gym" role="tab">
+                    <div class="tabx" style="font-weight:600;">
+                        <i class="fas fa-2x fa-dumbbell" style="margin: 20px auto;"></i>
+                        <h6 style="margin: 10px; letter-spacing: 1px;">GYM</h6>
+                    </div>
+                </a>
+                <a class="nav-item nav-link" id="spa-tab" data-toggle="tab" href="#spa" role="tab">
+                    <div class="tabx" style="font-weight:600;">
+                        <i class="fas fa-2x fa-spa fa-2x" style="margin: 20px auto;"></i>
+                        <h6 style="margin: 10px; letter-spacing: 1px;">SPA</h6>
+                    </div>
+                </a>
+            </div>
+        </nav>
+        
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="restaurant" role="tabpanel">
+                <div class="containerx">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="tabImg" src="images/restaurant.jpg">
+                        </div>
+                        <div class="col-md-6">
+                            <span class="sub-heading">World Class</span>
+                            <h3 class="heading">Restaurant</h3>
+                            <p>Nestled in the heart of the city, the Radisson Blu Bengaluru provides an upscale home base with easy city access for tourists in Bengaluru. Our convenient location places guests within a five-kilometre radius of the business and entertainment hotspots found in Bengaluru's Central Business District, and a 39-minute drive from Kempegowda International Aiport (BLR).Thrill-seekers can get up close to the races at the nearby Bangalore Turf Club.</p>
+                            <p>Each of our rooms and suites offers free high-speed wireless internet to help keep you connected to home or the office during your stay.The Whiskey Bar, our well-equipped hotel promotes maximum productivity and personal comfort..</p>
+                            <p><span class="sub-heading">Service Hours:</span><br><strong>7:30 AM - 8:00 PM</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="bar" role="tabpanel">
+                <div class="tab-pane fade show active" id="bar" role="tabpanel">
+                    <div class="containerx">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="tabImg" src="images/bar.jpeg">
+                            </div>
+                            <div class="col-md-6" style="padding-top: 20px;">
+                                <span class="sub-heading">World Class</span>
+                                <h3 class="heading">Bar</h3>
+                                <p>There is a full range of bar drinks including a wide selection of spirits, Whisky, Brandy and Liqueurs, soft drinks and  Beer.The wine list includes a variety and styles of wine including the famous Montes premium wine produced in Chile, with wines by the bottle and glass.</p>
+                                <p>Enjoy a drink in our spacious lounge bar, is a truly enjoyable experience with the names of ships as drinks and in the dimmed light of the cocktail bar or under a terrace umbrella, they will delight you with their unpeccable cocktails, as well as with the tastiest appetizers in the city which will help to ensure that you will have a “relaxing drink”</p>
+                                <p><span class="sub-heading">Service Hours:</span><br><strong>5:30 PM - 1:00 AM</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pickup" role="tabpanel">
+              <div class="tab-pane fade show active" id="pickup" role="tabpanel">
+                  <div class="containerx">
+                      <div class="row">
+                          <div class="col-md-6">
+                              <img class="tabImg" src="images/cab.jpg">
+                          </div>
+                          <div class="col-md-6" style="padding-top: 20px;">
+                              <h3 class="heading">PICK-UP</h3>
+                              <p>Arrive in style with our personal meet and greet service and ensure a pleasant tone for the first moments in Radisson! Airport or Railway Station pick-up service is a perfect choice for a quick, convenient and comfortable journey from Bangalore International Airport or Bangalore Railway Station</p>
+                              <p>Prices per car, for one-way transfer, incl. taxes (up to 4 persons):</p>
+                                <ul>
+                                  <li>Mercedes S-Class Long (W222): ₹1000</li>
+                                  <li>Mercedes E-Class or similar: ₹1500</li>
+                                  <li>Minivan  C-Class: ₹2500</li>
+                                </ul>
+                                <br>
+                                <br>
+                              <p><span class="sub-heading">Service Hours:</span><br><strong>5:30 PM - 1:00 AM</strong></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pool" role="tabpanel">
+              <div class="tab-pane fade show active" id="pool" role="tabpanel">
+                  <div class="containerx">
+                      <div class="row">
+                          <div class="col-md-6">
+                              <img class="tabImg" src="images/pool1.jpg">
+                          </div>
+                          <div class="col-md-6" style="padding-top: 20px;">
+                              <span class="sub-heading">World Class</span>
+                              <h3 class="heading">Pool</h3>
+                              <p>The Pool is set with a perfect venting system, strict water quality control, and a luxury pool surrounded with natural light ensuring a relaxing atmosphere.</p>
+                              <p>With plentiful sunbeams streaming through its full-length skylight, our Indoor Pool is an excellent place to swim laps, relax with family, or simply unwind in the peaceful surroundings.Enjoy your swim in indoor swimming pool, regardless of weather or external conditions.</p>
+                              <br>
+                              <br>
+                              <br>
+                              <br>
+                              <p><span class="sub-heading">Service Hours:</span><br><strong>5:30 AM - 10:00 PM</strong></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="gym" role="tabpanel">
+              <div class="tab-pane fade show active" id="gym" role="tabpanel">
+                  <div class="containerx">
+                      <div class="row">
+                          <div class="col-md-6">
+                              <img class="tabImg" src="images/Gym.jpg">
+                          </div>
+                          <div class="col-md-6" style="padding-top: 20px;">
+                              <span class="sub-heading">World Class</span>
+                              <h3 class="heading">GYM</h3>
+                              <p>All guests over the age of 16 are invited to use our in-house hotel gym to exercise and unwind.With a mix of equipment and weights</p>
+                              <p> Our hotel gym will cater to you whether you want to do a cardio workout, or if you want to give your muscles some strength training or toning exercises.</p>
+                              <p>Once you’ve worked up a sweat, head to Haxells and replenish your energy before you take on the rest of the day.</p>
+                              <br>
+                              <br>
+                              <br>
+                              <p><span class="sub-heading">Service Hours:</span><br><strong>6:30 AM - 8:00 PM</strong></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="spa" role="tabpanel">
+              <div class="tab-pane fade show active" id="spa" role="tabpanel">
+                    <div class="containerx">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="tabImg" src="images/Spa.jpg">
+                            </div>
+                            <div class="col-md-6" style="padding-top: 20px;">
+                                <span class="sub-heading">World Class</span>
+                                <h3 class="heading">Spa</h3>
+                                <p>When you're not sightseeing or basking in the Egyptian sunshine, take advantage of the 5-star services at Vital spa and fitness center. Every experience at our spa is designed to calm your mind, soothe your soul and delight your senses.</p>
+                                <p>An indoor haven with outdoor appeal, Deep Nature Spa offers massages, facials and even services for children. Guests can choose from an extensive menu of therapeutic and beauty treatments while benefitting from healing elements in local precious minerals.Feel younger, healthier, and more energetic after spending some time at the Espace Spa.</p>
+                                <p><span class="sub-heading">Service Hours:</span><br><strong>8:30 AM - 10:00 PM</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div></div>
+
+        </div>
+    </div>
+
+    <footer id="footer" class="foot">
+        <div class="container">
+            <div class="row rowinfoot">
+                <div class="col-md-4">
+                    <h3 class="foo-head">Subscribe</h3>
+                    <p class="foo-text">Register your Email ID to subscribe <br> to our Weekly NewsLetter.</p>
+                    <div class="input-group">
+                        <input class="form-control" type="email" placeholder="Email Address" id="email" style="background-color: white !important; color: black;">
+                        <div class="input-group-append">
+                            <button class="btn btn-default" type="submit" onclick="onSubscribe()">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="padding-left: 100px;">
+                    <h3 class="foo-head">Company</h3>
+                    <ul class="list-unstyled foo-text">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Hotels</a></li>
+                        <li><a href="#">Customer Care</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="foo-head">Our Facilities</h3>
+                    <ul class="list-unstyled foo-text">
+                        <li><a href="#">Resturant</a></li>
+                        <li><a href="#">Bars</a></li>
+                        <li><a href="#">Pick-up</a></li>
+                        <li><a href="#">Swimming Pool</a></li>
+                        <li><a href="#">Spa</a></li>
+                        <li><a href="#">Gym</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="copyright text-center">
+            <p>Made with Love By kapsky</p>
+            <p><small>© kapsky</small></p>
+        </div> -->
+    </footer>
+    <!-- <p><small>© Domain.com<br>
+        All Rights Reserved.<br>
+        Designed by <a href="#">kapsky</a> <br>
+        Demo Images: Unsplash</small></p> -->
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script>
+        async function onSubscribe(){
+            let email = document.getElementById('email').value;
+            let data = {"email": email};
+            console.log(data);
+            const res = await fetch('http://localhost:3000/services/news', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data) 
+            });
+            const response = await res.json();
+            alert(response.message);
+        }
+        
+    </script>
+</body>
+</html>

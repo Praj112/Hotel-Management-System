@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RADISSON BLU</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <script src="https://kit.fontawesome.com/82e6195eae.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="caro" style="margin-top: 20px;">
+        <div class="container">
+            <a class="navbar-brand" href="#">RADISSON</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/booking">Bookings</a>
+                    </li>  
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <img src="./images/trial3.jpg" class="image">
+    </div>
+
+    <div class="containerz">
+        <div class="container" style="padding: 0px;">
+            <br>
+            <div class="row avail" id="checker">
+                <div class="col-md-2" style="padding-top: 10px;">
+                    <div class="form-group">
+                        <select id="type" name="type" class="form-control" placeholder="Select-Room">
+                            <option>Select Rooms</option>
+                            <option>Suites</option>
+                            <option>Deluxe Rooms</option>
+                            <option>King Rooms</option>
+                            <option>Single</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-2" style="padding-top: 10px;">
+                    <div class="form-group">
+                        <select id="rooms" name="rooms" class="form-control" placeholder="Number Of Rooms">
+                            <option>No Of Rooms</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3" style="padding-top: 10px;">
+                    <div class="input-group">
+                        <div class="input-group-prepend" style="padding: 10px;">
+                            <span>Check-In</span>
+                        </div>
+                        <input id="from" name="from" class="form-control" type="date" id="from">
+                    </div>
+                </div>
+                <div class="col-md-3" style="padding-top: 10px;">
+                    <div class="input-group">
+                        <div class="input-group-prepend" style="padding: 10px;" >
+                            <span>Check-Out</span>
+                        </div>
+                        <input id="to" name="to" class="form-control" type="date" id="to">
+                    </div>
+                </div>
+                <button class="col-md-2 btn btn-default" onclick="checkAvailability()" style="background-color: #464343; padding-top: 20px;" type="submit">
+                    <div class="text-center" style="color: white;">
+                        <p>CHECK AVAILABILITY</p>
+                    </div>
+                </button>
+            </div>
+        
+            <div class="text-center result" id="presult">
+                <br>
+                <p>Yes Rooms Are Available!</p>
+                <a href="/booking">
+                    <div class="btn btn-default" style="color: white;">Book Now</div>
+                </a>
+            </div>
+            
+            <div class="text-center" style="padding: 70px 0 50px 0;">
+                <p class="heading1">Featured rooms</p>
+            </div>
+            <br>
+            <div class="feature-full-1col">
+					<div class="image" style="background-image: url(images/suite.jpg);">
+						<div class="descrip text-center">
+							<p><small>Price</small><span>₹20000/day</span></p>
+						</div>
+					</div>
+					<div class="desc">
+						<h3>Suites</h3>
+                        <p>This spacious suite offers comfort, convenience and privacy. Its luxurious loft ambience and beautiful views of Dubai and the Ocean are what make this suite truly memorable.Live like royalty in this sky-high palace. Your suite is striking in its classical furnishings with beautiful views of the Ocean and the  skyline. Enter through your private lift, relax in your cinema or library, and enjoy personal service fit for a king.</p>
+                        <a href="./booking" class="btn">Book Now</a>
+					</div>
+				</div>
+        <br>
+        <div class="feature-full-1col">
+        					<div class="desc">
+        						<h3>King Rooms</h3>
+                                <p>Specially crafted for stylish and spacious living for larger groups, this suite has three magnificent bedrooms, three separate living spaces and a grand dining space.We offer a rich selection of facilities and amenities to guests , although please note that some may incur an additional fee.
+                                    </p>
+                                <a href="./booking" class="btn">Book Now</a>
+        					</div>
+        					<div class="image" style="background-image: url(images/kingrooms.jpg);">
+        						<div class="descrip text-center">
+        							<p><small>Price</small><span>₹15000/day</span></p>
+        						</div>
+        					</div>
+        				</div>
+            <br>
+            <div class="feature-full-2col">
+        <div class="f-hotel">
+          <div class="image" style="background-image: url(images/deluxrooms.jpg);">
+            <div class="descrip text-center">
+              <p><small>Price</small><span>₹10000/day</span></p>
+            </div>
+          </div>
+          <div class="desc">
+            <h3>Deluxe Rooms</h3>
+            <p>Enjoy a suite designed for high society. Watch the tranquil waters flow beneath you through floor-to-ceiling windows, and recline in your two grand and luxurious bedrooms, served by two separate dressing rooms and two private bars.
+                    </p>
+            <a href="./booking" class="btn">Book Now</a>
+          </div>
+        </div>
+        <div class="f-hotel">
+          <div class="image" style="background-image: url(images/singleroom1.jpg);">
+            <div class="descrip text-center">
+              <p><small>Price</small><span>₹8000/day</span></p>
+            </div>
+          </div>
+          <div class="desc">
+            <h3>Single Rooms</h3>
+            <p>Enjoy spectacular panoramic views of the Ocean, an exclusive, private bar, and your own snooker table. The Club One-Bedroom Suite is the ideal space for hosting clients and small parties.
+                </p>
+            <a href="./booking" class="btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+          </div>
+    </div>
+
+      <footer id="footer" class="footx">
+        <div class="container">
+            <div class="row rowinfoot">
+              <div class="col-md-4">
+                  <h3 class="foo-head">Subscribe</h3>
+                  <p class="foo2-text">Register your Email ID to subscribe <br> to our Weekly NewsLetter.</p>
+                  <form id="form-subscribe">
+                  <div class="input-group">
+                      <input class="form-control" type="email" placeholder="Email Address" id="email" style="background-color: white !important">
+                      <div class="input-group-append">
+                            <button class="btn btn-default" type="submit" onclick="onSubscribe()">Subscribe</button>
+                      </div>
+                  </div>
+                  </form>
+              </div>
+              <div class="col-md-3" style="padding-left: 100px;">
+                  <h3 class="foo-head">Company</h3>
+                  <ul class="list-unstyled foo2-text">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Hotels</a></li>
+                      <li><a href="#">Customer Care</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  <h3 class="foo-head">Our Facilities</h3>
+                  <ul class="list-unstyled foo2-text">
+                      <li><a href="#">Resturant</a></li>
+                      <li><a href="#">Bars</a></li>
+                      <li><a href="#">Pick-up</a></li>
+                      <li><a href="#">Swimming Pool</a></li>
+                      <li><a href="#">Spa</a></li>
+                      <li><a href="#">Gym</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+      </footer> 
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        var checker = document.getElementById('checker');
+        var presult = document.getElementById('presult');
+        presult.style.display = "none";
+
+        async function onSubscribe(){
+            let email = document.getElementById('email').value;
+            let data = {"email": email};
+            console.log(data);
+            const res = await fetch('http://localhost:3000/services/news', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data) 
+            });
+            const response = await res.json();
+            alert(response.message);
+        }
+
+
+        async function checkAvailability(){
+            let type = document.getElementById('type').value;
+            let room = document.getElementById('rooms').value;
+            let from = document.getElementById('from').value;
+            let to = document.getElementById('to').value;
+            
+            let data = {"type": type, "room": room, "from": from, "to": to};
+            console.log("Button Clicked");
+            const res = await fetch('http://localhost:3000/booking/check', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data) 
+            });
+            const response = await res.json();
+            console.log(response.message);
+            if(response.message=="Avail"){
+                checker.style.display = "none";
+                presult.style.display = "block";
+            }
+            else{
+                alert(response.message);
+            }
+        }
+        
+    </script>
+</body>
+</html>
