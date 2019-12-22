@@ -1,0 +1,508 @@
+.fixed-top{
+    position: absolute !important;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-baackground-size: cover;
+    background-size: cover;
+    position: absolute;
+}
+.carousel-caption {
+    top: 40% !important;
+}
+.carousel-caption h5{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-top:25px;
+}
+.navbar-light .nav-link{
+    text-transform: uppercase;
+    color: #ffffff !important;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.navbar-light .navbar-brand{
+    color: #ffffff !important;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.nav-link:active, .nav-link:hover {
+    color: #F75A4C !important;
+}
+.carousel-caption .btn {
+    margin: 40px 20px;
+    padding: 15px 30px;
+    border-radius: 40px;
+    background: #F75A4C;
+    border: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.carousel-caption .btn:hover{
+    background: #454244;
+}
+.fac{
+    margin: 0 auto;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.tabx h6{
+    font-weight: 600 !important;
+}
+.nav-item.nav-link{
+    color: rgb(192, 192, 192);
+}
+.nav-item.nav-link.active{
+    color: #F75A4C !important;
+    background-color: #ffffff !important;
+}
+#tabs .nav > a{
+    border-radius: 0px;
+    padding: 40px 1rem;
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+#tabs .nav > a.active{
+    border-bottom: 1px solid #F75A4C;
+}
+.containerx{
+    padding: 40px;
+}
+.containerx p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #848484;
+}
+.tabImg{
+    max-width: 100%;
+    height: 550px;
+    display: inline-block;
+    vertical-align: middle
+}
+.heading{
+    color: #F75A4C;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.sub-heading{
+    margin-top: 20px;
+    font-size: 16px;
+    color: rgb(192, 192, 192);
+}
+.foot{
+    margin-top: 50px;
+    background-color: #E6E6E6;
+}
+.footx{
+    background-color: rgb(92, 89, 89);
+}
+.rowinfoot{
+    padding: 30px 0px;
+}
+.foo-head{
+    font-size: 20px;
+    color: #F75A4C;
+    margin: 20px 0;
+}
+.foo-text{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.foo-text li a{
+    color: black;
+    text-decoration: none;
+}
+.foo2-text{
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.foo2-text li a{
+    color: white;
+    text-decoration: none;
+}
+.copyright {
+    color: white;
+    background: #554f53;
+    justify-content: center;
+}
+.copyright p{
+    margin-bottom: 0;
+}
+.image{
+    width: 100%;
+    height: auto;
+}
+.containerz{
+    background-color: #E6E6E6;
+    padding-bottom: 30px;
+}
+.heading1{
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.room-img{
+    width: 100%;
+    height: 481px;
+}
+.card{
+    border-radius: 0px !important;
+}
+.card-body{
+    padding: 0px !important;
+}
+.head-room{
+    color: #F75A4C;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.card-body.row.col-md-5, .card-body.row.col-md-7, .card-body.row.col-md-6, .card-body.row.col-md-3{
+    padding: 0px !important;
+}
+
+.containerz .imgx, .containerz .imgx{
+    padding: 0px !important;
+}
+.dpt, .dpts{
+    padding: 40px 50px !important;
+}
+.dpt p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #848484;
+}
+.dpts p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #848484;
+}
+.row{
+    margin: 0px !important;
+}
+.card .btn{
+    padding: 10px 30px;
+    border-radius: 0px;
+    background: #F75A4C;
+    border: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.avail{
+    color: white;
+    margin-top: 40px !important;
+    background-color: #F75A4C;
+    padding: auto auto;
+}
+.form-control{
+    background-color: #F75A4C !important;
+    color: white !important;
+    border-radius: 0 !important;
+    border: 2px solid white !important;
+}
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+.result .btn{
+    margin: 10px 20px;
+    padding: 15px 30px;
+    border-radius: 40px;
+    background: #F75A4C;
+    border: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.dpts a, .dpt a{
+    color: white;
+}
+.dpts a:hover, .dpt a:hover{
+    color: white;
+}
+.card .card-body .row .col-md-7 .room-img .descrip {
+    width: 180px;
+    position: absolute;
+    top: 0;
+    right: -180px;
+    padding: 10px;
+    background: #FF5722;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.text-center {
+    text-align: center;
+}
+/* prajwal  */
+.faxc{
+  margin: 0 auto;
+  font-size: 60px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: auto;
+  color: #F75A4C;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: darkorange;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: relative;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input,select{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.feature-full-1col {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.feature-full-1col .btn{
+    padding: 10px 30px;
+    border-radius: 0px;
+    background: #F75A4C;
+    border: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white !important;
+}
+.feature-full-1col .image, .feature-full-1col .desc {
+  float: left;
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .feature-full-1col .image, .feature-full-1col .desc {
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+  }
+}
+.feature-full-1col .image {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  height: 450px;
+}
+.feature-full-1col .image .descrip {
+  width: 180px;
+  position: absolute;
+  top: 0;
+  right: -180px;
+  padding: 10px;
+  background: #FF5722;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.feature-full-1col .image .descrip p {
+  margin: 0;
+  color: #fff;
+}
+.feature-full-1col .image .descrip small, .feature-full-1col .image .descrip span {
+  display: block;
+}
+.feature-full-1col .image .descrip small {
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+  .feature-full-1col .image {
+    height: 300px;
+  }
+}
+.feature-full-1col .desc {
+  padding: 50px;
+  background: #fff;
+}
+@media screen and (max-width: 768px) {
+  .feature-full-1col .desc {
+    padding: 30px;
+  }
+}
+.feature-full-1col:hover .image .descrip, .feature-full-1col:focus .image .descrip {
+  right: 0;
+}
+
+.feature-full-2col {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.feature-full-2col .btn{
+    padding: 10px 30px;
+    border-radius: 0px;
+    background: #F75A4C;
+    border: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white !important;
+}
+.desc a{
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .feature-full-2col {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.feature-full-2col .f-hotel {
+  float: left;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+@media screen and (max-width: 992px) {
+  .feature-full-2col .f-hotel {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+}
+.feature-full-2col .f-hotel .descrip {
+  width: 180px;
+  position: absolute;
+  top: 0;
+  right: -180px;
+  padding: 10px;
+  background: #FF5722;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.feature-full-2col .f-hotel .descrip p {
+  margin: 0;
+  color: #fff;
+}
+.feature-full-2col .f-hotel .descrip small, .feature-full-2col .f-hotel .descrip span {
+  display: block;
+}
+.feature-full-2col .f-hotel .descrip small {
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.feature-full-2col .f-hotel .image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+@media screen and (max-width: 480px) {
+  .feature-full-2col .f-hotel .image {
+    position: relative;
+    height: 200px;
+  }
+}
+.feature-full-2col .f-hotel .image, .feature-full-2col .f-hotel .desc {
+  width: 50%;
+}
+@media screen and (max-width: 480px) {
+  .feature-full-2col .f-hotel .image, .feature-full-2col .f-hotel .desc {
+    width: 100%;
+  }
+}
+.feature-full-2col .f-hotel .desc {
+  padding: 30px;
+  background: #fff;
+}
+.feature-full-2col .f-hotel:hover .image .descrip, .feature-full-2col .f-hotel:focus .image .descrip {
+  right: 0;
+}
+.congrats{
+    color: #F75A4C;
+}
+#email{
+  color: black !important;
+}
+.feature-full-1col p{
+  margin-top: 25px;
+  margin-bottom: 3rem;
+  line-height: 1.7;
+}
+.feature-full-1col h3{
+margin-bottom: .5rem;
+font-family: inherit;
+font-weight: 500;
+line-height: 1.2;
+text-transform: uppercase;
+color: #F75A4C;
+}
+.feature-full-2col h3{
+margin-bottom: .5rem;
+text-transform: uppercase;
+color: #F75A4C;
+}
